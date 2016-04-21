@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>test</title>
+    <link rel="stylesheet" href="../public/css/master.css" />
+  </head>
+  <body>
+    <div class="zoom-container">
+      <img src="../src/img/back.jpg" id="zoom-img" />
+    </div>
+    <script type="text/javascript" src="../public/js/zoom.js"></script>
+    <script type="text/javascript">
+      (function () {
+        addEventListener('load', loadComplete);
+
+        function loadComplete () {
+          var $img = document.querySelector('#zoom-img');
+          var zoom = new Zoom($img);
+        }
+      })();
+    </script>
+  </body>
+</html>
